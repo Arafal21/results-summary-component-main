@@ -1,0 +1,203 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+}
+.wrapper section.score {
+  padding: 40px 0;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background: linear-gradient(hsl(256, 72%, 46%), hsl(241, 81%, 54%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper section.score .your-result {
+  color: hsl(241, 90%, 80%);
+  font-size: 18px;
+}
+.wrapper section.score .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(hsl(241, 81%, 54%), hsl(256, 72%, 46%));
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin: 30px 0;
+}
+.wrapper section.score .circle .number-of-result {
+  font-size: 6rem;
+  color: hsl(0, 0%, 100%);
+}
+.wrapper section.score .circle .of-hundred {
+  color: hsl(241, 90%, 80%);
+  font-size: 18px;
+}
+.wrapper section.score .score-description {
+  text-align: center;
+}
+.wrapper section.score .score-description .praise {
+  color: hsl(0, 0%, 100%);
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.wrapper section.score .score-description .how-much-higher {
+  color: hsl(241, 90%, 80%);
+  width: 320px;
+  font-size: 18px;
+}
+.wrapper section.statistics {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+}
+.wrapper section.statistics .summary {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.wrapper section.statistics .reaction-container,
+.wrapper section.statistics .memory-container,
+.wrapper section.statistics .verbal-container,
+.wrapper section.statistics .visual-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+.wrapper section.statistics .icon-and-type {
+  display: flex;
+}
+.wrapper section.statistics .icon-and-type .reaction-text,
+.wrapper section.statistics .icon-and-type .memory-text,
+.wrapper section.statistics .icon-and-type .verbal-text,
+.wrapper section.statistics .icon-and-type .visual-text {
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.wrapper section.statistics .icon-and-type .reaction-text {
+  color: hsl(0, 100%, 67%);
+}
+.wrapper section.statistics .icon-and-type .memory-text {
+  color: hsl(39, 100%, 56%);
+}
+.wrapper section.statistics .icon-and-type .verbal-text {
+  color: hsl(166, 100%, 37%);
+}
+.wrapper section.statistics .icon-and-type .visual-text {
+  color: hsl(234, 85%, 45%);
+}
+.wrapper section.statistics .percent-of {
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+}
+.wrapper section.statistics .of-100 {
+  color: gray;
+}
+.wrapper section.statistics .reaction-container {
+  background-color: hsla(0, 100%, 67%, 0.2);
+}
+.wrapper section.statistics .memory-container {
+  background-color: hsla(39, 100%, 56%, 0.2);
+}
+.wrapper section.statistics .verbal-container {
+  background-color: hsla(166, 100%, 37%, 0.2);
+}
+.wrapper section.statistics .visual-container {
+  background-color: hsla(234, 85%, 45%, 0.2);
+}
+.wrapper .i-want-to-center-a-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .i-want-to-center-a-button .btn-continue {
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  margin: 10px 0 0;
+  font-size: 18px;
+}
+.wrapper .i-want-to-center-a-button .btn-continue:hover {
+  background: linear-gradient(hsl(256, 72%, 46%), hsl(241, 81%, 54%));
+}
+
+@media (min-width: 1200px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper {
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    box-shadow: 10px 10px 30px hsl(221, 100%, 96%);
+  }
+  .wrapper section.score {
+    margin-right: 10px;
+    width: 400px;
+    height: 450px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  .wrapper section.statistics {
+    width: 500px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=style.css.map */
